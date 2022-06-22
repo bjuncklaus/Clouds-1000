@@ -15,7 +15,7 @@ Nimbus Gazer uses motionEye version 0.41 and Motion version 4.2.2. The system is
 
 Our configuration of the motion system is set at the lowest available frame rate of 1 frame per minute to match the time resolution of sensory data from our lab. That means that every minute, an image is captured.
 
-Captured images are configured at 2592 x 1944 resolution and are stored in a local directory before being uploaded to the cloud (the default directory is /Nuvens/camtest/). We use the built-in option to upload to a Google Drive directory to upload the images.
+Captured images are configured at 2592 x 1944 resolution and are stored in a local directory before being uploaded to the cloud (the default directory is `/Nuvens/camtest/`). We use the built-in option to upload to a Google Drive directory to upload the images.
 
 For monitoring, the system sends a health-check e-mail each time the system either: boots-up, start or stop recording.
 
@@ -25,7 +25,7 @@ An operating system image with (almost) everything configured available at [this
 1.  Passwords (comes with pi username and pi password for the OS and admin and no password for the interface. We suggest using the default North and South cameras described below.
 2.  Time zone: comes with the São Paulo time zone.
 3.  Set the name of your camera (hostname comes pre-named from camtest ). Use raspi-config for this.
-4.  Define in the web interface the name of the folder where the images will be saved. It comes pre-configured to /Clouds/camtest and has to be changed. Always use /Clouds/<camera-name> .
+4.  Define in the web interface the name of the folder where the images will be saved. It comes pre-configured to `/Clouds/camtest` and has to be changed. Always use `/Clouds/<camera-name>`.
 
 To record to a new SD card and create a new Nimbus Gazer you can follow [these](https://www.tomshardware.com/how-to/back-up-raspberry-pi-as-disk-image) instructions. Alternatively you can download a Raspberry Pi Imager from [here](https://www.raspberrypi.org/downloads/) and follow the instructions in the figures below:
 1. ![image](https://user-images.githubusercontent.com/9988985/174694080-2609b9bb-7daa-4ae6-827f-a615696a282b.png)
