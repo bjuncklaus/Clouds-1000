@@ -76,7 +76,33 @@ The first is an "I'm alive" script that, as soon as the network is up, sends an 
 #### Camera Access
 To access the camera web interface go to `<camera ip>:8765` and input your credentials. For ssh access you can  simply execute: `pi <username>` via terminal.
 
-# 🚧[Under construction...] Clouds-1000
+# Clouds-1000 Dataset
+[Clouds-1000](https://data.mendeley.com/datasets/4pw8vfsnpx/1) is a dataset of 1000 sky images captured with cameras directed towards the horizon in the north and south directions in an area with a good view of the sky in the UFSC Photovoltaic Laboratory at the Federal University of Santa Catarina, in the city of Florianópolis/SC-Brazil. The images were collected every minute over the period of March–October of 2021.
+
+To construct the dataset, images were captured with cameras directed towards the horizon in the north and south directions in an area with good view of the sky in the UFSC Photovoltaic Laboratory at the Federal University of Santa Catarina. The images were collected every minute over the period of March - October of 2021. In order to capture images from the sky, our research group developed a low-cost equipment using Raspberry Pi with a custom Operational System (OS) we call Nimbus Gazer. The figure below shows the equipment installed at the Photovoltaic Laboratory, in Florianópolis.
+
+![image](https://user-images.githubusercontent.com/9988985/177363154-aeab6245-f264-4308-8974-34c8f8eda128.png)
+
+At the lab we have two equipment with cameras aiming just above the horizon line in order to capture the sky and incoming clouds. Based on previous analysis, our team decided that the best locations to point the cameras was the North and South. This is mainly due to the most predominant winds in the area, this way we can see clouds approaching the area more clearer. Both equipment are encased in a aluminum shell for protection against the weather, with a clear acrylic at the front where the camera is located.
+
+The cameras we used are the Raspberry Pi camera model V1.3, with a field of view of 65º. Since we have two cameras aiming at opposite directions, we have the equivalent of a 130º view of the sky at all times. The equipment is connected via ethernet cable to the lab facility.
+
+For the task of image annotation, our research team was divided into 3 Data Analysts responsible for analyzing and labeling the images, and 2 meteorologists responsible for supervision and validation. Sylvio Mantelli is a PhD from INPE, working on our research team and helped with data labeling mentoring and several analysis throughout development of the dataset. Maurici Amantino Monteiro, professor and currently climatologist at Aqueris Engenharia e Soluções Ambientais. With several years of experience in synoptic observation, he helped us to understand the nature of clouds and associate them with their corresponding classes.
+
+The annotations were handmade using the [Supervisely](https://supervise.ly/) tool. The tool was created for image annotation and data management in which it's possible to create the annotations via interface available, similar to other image editors. Each image was annotated with the polygon tool and classified using 4 cloud types: Cirriform, Cumuliform, Stratiform, Stratocumuliform and 1 class representing trees and buildings. This classification is based on solar radiation absorption characteristics. Due to the humid climate of the region, the Cumulonimbus (Cb) cloud seldom forms. This type of cloud usually form in dryer regions, thus we won't find any occurrence of this cloud in the dataset.
+
+The cloud type distribution is shown in the table below and a few image examples of north and south images can be seen in the next figure.
+
+| Cloud Type      | Amount in Dataset | % in Dataset |
+| ----------- | ----------- | ----------- |
+| Arvore      | 989       | 99.30%       |
+| Estratocumuliformes   | 812        | 81.53%        |
+| Estratiformes      | 271       | 27.21%       |
+| Cirriformes   | 285        | 28.61%        |
+| Cumuliformes      | 90       | 9.04%       |
+
+![image](https://user-images.githubusercontent.com/9988985/177363896-b2132747-e175-4b1a-b7ea-8d82e31811de.png)
+
 
 
 # License
