@@ -3,17 +3,17 @@
 
 # Introduction
 
-Clouds-1000 is a dataset of 1000 sky images captured with cameras directed towards the horizon in the north and south directions in an area with a good view of the sky in the UFSC Photovoltaic Laboratory at the Federal University of Santa Catarina, in the city of Florianópolis/SC-Brazil. The images were collected every minute over the period of March–October of 2021.
+Clouds-1000 is a 1000 sky images dataset, captured with cameras directed towards the horizon in north and south directions in Florianópolis/SC-Brazil. The place chosen to capture the cloud imagens was a hill nearby Federal University of Santa Catarina’s campus: an area with good view of the sky. Images were collected every minute during the period from March to June 2021. 
 
 # Reproduction
 In order to reproduce our dataset you'll need to first configure the OS for capturing the images.
 
 # Clouds-1000 Dataset
-[Clouds-1000](https://data.mendeley.com/datasets/4pw8vfsnpx/1) is a dataset of 1000 sky images captured with cameras directed towards the horizon in the north and south directions in an area with a good view of the sky in the UFSC Photovoltaic Laboratory at the Federal University of Santa Catarina, in the city of Florianópolis/SC-Brazil (see image below for locations). The images were collected every minute over the period of March–October of 2021.
+[Clouds-1000](https://data.mendeley.com/datasets/4pw8vfsnpx/1) is a 1000 sky images dataset, captured with cameras directed towards the horizon in north and south directions in Florianópolis/SC-Brazil. The place chosen to capture the cloud imagens was a hill nearby Federal University of Santa Catarina’s campus: an area with good view of the sky (see image below for location). Images were collected every minute during the period from March to June 2021.
 
 ![image](https://user-images.githubusercontent.com/9988985/178502394-cd5824e3-5828-426f-a2be-1cd4e152933b.png)
 
-To construct the dataset, images were captured with cameras directed towards the horizon in the north and south directions in an area with good view of the sky in the UFSC Photovoltaic Laboratory at the Federal University of Santa Catarina. The images were collected every minute over the period of March - October of 2021. In order to capture images from the sky, our research group developed a low-cost equipment using Raspberry Pi with a custom Operational System (OS) we call Nimbus Gazer. The figure below shows the equipment installed at the Photovoltaic Laboratory, in Florianópolis.
+To construct the dataset, images were captured with cameras directed towards the horizon in the north and south directions in an area with good view of the sky: a hill nearby Federal University of Santa Catarina’s campus. Images were collected every minute during the period from March to June 2021. In order to capture images from the sky, our research group developed a low-cost equipment using Raspberry Pi with a custom Operational System (OS) we call Nimbus Gazer. The figure below shows the equipment installed in the Photovoltaic Laboratory of the Federal University of Santa Catarina.
 
 ![image](https://user-images.githubusercontent.com/9988985/177363154-aeab6245-f264-4308-8974-34c8f8eda128.png)
 
